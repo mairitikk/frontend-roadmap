@@ -2,7 +2,7 @@
 
 ## 1. HTML + CSS & Bootstrap
 
-* [X] [The Complete front end web developer Bootcamp - 14 projects](https://www.udemy.com/course/complete-front-end-web-developer-bootcamp/)
+* [ ] [The Complete front end web developer Bootcamp - 14 projects](https://www.udemy.com/course/complete-front-end-web-developer-bootcamp/)
 
 * [ ] CSS Extension: SASS - The Complete SASS Course | https://www.udemy.com/course/sass-the-complete-sass-course-css-preprocessor/
 
