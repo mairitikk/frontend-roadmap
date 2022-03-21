@@ -5,6 +5,7 @@
 * [ ] [The Complete front end web developer Bootcamp - 14 projects](https://www.udemy.com/course/complete-front-end-web-developer-bootcamp/)
 
 * [ ] [CSS Extension: SASS - The Complete SASS Course ](https://www.udemy.com/course/sass-the-complete-sass-course-css-preprocessor/)
+* [ ] [CSS - Examples](https://www.w3schools.com/howto/howto_css_icon_bar.asp)
 
 ## 2. (HTML + CSS) + JS
 * [ ] [Free Front End Web Development Tutorial - Foundations of Front-End Web Development](https://www.udemy.com/course/foundations-of-front-end-development/)
