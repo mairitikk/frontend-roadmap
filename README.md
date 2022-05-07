@@ -1,5 +1,7 @@
 # Frontend Roadmap
 
+This is my roadmap to be a Front End Web developer
+
 ## 1. HTML + CSS & Bootstrap
 
 * [x] [The Complete front end web developer Bootcamp - 14 projects](https://www.udemy.com/course/complete-front-end-web-developer-bootcamp/)
