@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Scrollspy</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<style>
+    body{position:relative;}
+    #section1{padding-top:45px; height:500px; background-color: cyan;}
+    #section2{padding-top:45px; height:500px; background-color: yellow;}
+    #section3{padding-top:45px; height:500px; background-color: pink;}
+    #section4{padding-top:45px; height:500px; background-color: magenta;}
+    </style>
+</head>
+<body data-spy="scroll" data-target=".navbar">
+    <!--Navbar-->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <!--Container-->
+ <div class="container-fluid">
+    <!--Collapse Icon-->
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav1">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">My Website</a>
+    </div>
+    <!--Navbar Links-->
+    <div class="collapse navbar-collapse" id="nav1">
+        <ul class="nav navbar-nav">
+            <li><a href="#section1">Link 1</a></li>
+            <li><a href="#section2">Link 2</a></li>
+            <li><a href="#section3">Link 3</a></li>
+            <li><a href="#section4">Link 4</a></li>
+        </ul>
+    </div>
+ </div>
+    </nav>
+    <!--Content Sections-->
+    <div id="section1" class="container-fluid">
+        <h1>Link 1</h1>
+        <p>Content.</p>
+    </div>
+    <div id="section2" class="container-fluid">
+        <h1>Link 2</h1>
+        <p>Content.</p>
+    </div>
+    <div id="section3" class="container-fluid">
+        <h1>Link 3</h1>
+        <p>Content.</p>
+    </div>
+    <div id="section4" class="container-fluid">
+        <h1>Link 4</h1>
+        <p>Content.</p>
+    </div>
+
+
+
+</body>
+</html>
+

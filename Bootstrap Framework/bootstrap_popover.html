@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Modal</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <br><br><br>
+  <a href="#" data-toggle="popover" title="Test Headr" data-content="Sample Paragraph" data-placement="right">Popover</a>
+  <a href="#" data-trigger="focus" data-toggle="popover" title="Test Headr" data-content="Sample Paragraph" data-placement="right">Popover</a>
+  <a href="#" data-trigger="hover" data-toggle="popover" title="Test Headr" data-content="Sample Paragraph" data-placement="right">Popover</a>
+</div>
+<script>
+    $(document).ready(function(){
+        $('[data-toggle="popover"]').popover();
+    });
+</script>
+</body>
+</html>
