@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport"content="width=device-width,initial-scale=1">
+
+    <title>Css project</title>
+    <style>
+        body{
+            margin:0;
+            padding:0;
+            line-height:1.5em;
+        }
+        #header{
+            background:black;
+            font-family:Arial;
+            height:100px;
+        }
+        #contentwrapper{
+            float:left;
+            width:100%;
+        }
+        #contentcolumn {
+            margin: 0 230px 0 230px;
+        }
+        #leftcolumn{
+            float:left;
+            width:230px;
+            margin-left:-100%;
+            background:#24C8FF;
+        }
+        
+        #rightcolumn{
+            float: left;
+            width:230px;
+            margin-left:-230px;
+            background-color: #FFFB00;
+        }
+        .innertext{
+            margin:20px;
+            font-family: Arial;
+            color:#5E5E5E;
+        }
+        #footer{
+            clear:left; /*Cannot float on Left*/
+            width:100%;
+            background:black;
+            color: #FFF;
+            font-family: Arial;
+            text-align:center;
+            padding: 4px;
+        }
+/* ##### Navigation Bar ##### */
+        ul{
+            list-style-type:none;
+            margin:0;
+            padding:0;
+            background-color:#000;
+        }
+
+        li{
+            float:left;
+            border-right:1px solid #bbb;
+        }
+        li:last-child{
+            border-right:none;
+        }
+        li a{
+            display:block;
+            color: white;
+            text-align:center;
+            padding: 14px 16px;
+            text-decoration:none;
+        }
+        li a:hover:not(.active){
+            background-color:#808080;
+        }
+
+        .active{
+            background-color:#0099ff;
+        }
+
+        /*#####Responsive layout CSS ####*/
+
+        @media(max-width:840px){
+            /*Drop Right Column Down*/
+       #leftcolumn{
+           margin-left:-100%;
+       }
+       #rightcolumn{
+           float:none;
+           width:100;
+           margin-left:0;
+           clear:both;
+       }
+       #contentcolumn{
+           margin-right:0;
+            /*Set margin to Left Column Width*/        
+        }
+
+     }
+     @media(max-width:600px){
+     /*Drop Left Column Down*/
+    #leftcolumn{
+        float:none;
+        width:100%;
+        clear:both;
+        margin-left:0;
+    }
+    #contentcolumn{
+        margin-left:0;
+    }
+    }
+    </style>    
+    </head>
+    <body>
+        <div id="container">
+            <div id="header">
+                <ul style="display:inline;">
+                <li><a class="active" href="#home">Home</a></li>
+                <li><a href="#news">About</a></li>
+                <li><a href="#contact">News</a></li>
+                <li><a href="#about">Contact</a></li>
+                </ul>
+            </div>
+            <div id="contentwrapper">
+                <div id="contentcolumn">
+                    <div class="innertext">
+                        <b>Welcome!</b><br/>
+                        Tekst (ladina keeles textum) on kitsamas tähenduses kirjakeele piiritletud[viide?] vorm. Laiemas tähenduses võib tekstina mõista igasugust kirjalikku informatsiooni, veel laiemas tähenduses ei pruugi tekst aga ka mitte kirjalik olla (kultuuritekst).
+
+Kirjakeele areng on andnud võimaluse vormistada ja säilitada suulise kultuuri pärandit tekstina. Suur osa ajaloolisest teabest pärineb kirjalikest allikatest.
+
+Teksti olemasolu põhineb kirjal, mille märkide abil on võimalik kodeerida foneeme, silpe, sõnu, arve, helisid jne. Erinevates kultuurides ja valdkondades on kasutusel erinevad märgisüsteemid. Teksti üheks olulisemaks omaduseks on lineaarsus.
+
+Informatsiooni võimet eksisteerida tekstina nimetatakse tekstuaalsuseks, mida uurib tekstilingvistika. Robert-Alain de Beaugrande ja Wolfgang Ulrich Dressler on 1981. aastal sätestanud terve rea tekstuaalsusekriteeriume: ühest küljest teksti enda tunnused nagu kohesioon ja koherentsus ning teiselt poolt kommunikatsiooniga seotud tunnused nagu intentsioon, aktsepteeritavus, informatiivsus ja situatsioonilisus.
+
+Kohesioon iseloomustab teksti grammatilist ühtekuuluvust: teksti erinevate lausete ja osade keelelised allstruktuurid on omavahel seotud ja loovad tuntava kokkukuuluvuse. Koherentsus iseloomustab teksti sisulist, loogilist seostatust. Kuigi kohesioon ja koherentsus kuuluvad kõige olulisemate tekstuaalsusekriteeriumide hulka, leidub ka erandeid: on olemas tekste, mis koosnevad seosetutest sõnadest või isegi häälitsustest, mis on osaliselt mõistetavad müraks redutseeritud kõlamaalingutena ja mis on tervikuna interpreteeritavad paljukihilistena. Sellist tekstuaalsust esineb näiteks dadaistidel.
+
+Situatsiooniga seotud tekstuaalsusekriteeriumide raames vaadeldakse tekste aspektist, kuidas saatja (Sender) loob selle teatud eesmärgiga (intentsioon) ning/või vastuvõtja (Empfänger) seda aktsepteerib. Et tekst oleks vastuvõtjale aktsepteeritav, sõltub sellest, kas tekst suudab luua oma kujuteldava maailma ja annab edasi selle situatsioone (situatsioonilisus) ning kas see sisaldab informatsiooni oodatud ja ootamatute, tuntud ja tundmatute elementide ja suhete kohta (informatiivsus). Dadaistide näitel ka esmapilgul mittekohesiooniline ja mittekoherentne tekst võib olla aktsepteeritav, kui vastuvõtja jõuab järeldusele, et saatja taotluseks on edastada üllatavat, normist kõrvale kalduvaid elemente sisaldavat teksti.
+
+Intertekstuaalsus on teksti omadus seostuda viidete ja tsitaatide abil teiste tekstidega.
+
+
+
+                    </div>
+                </div>
+            </div>
+            <div id="leftcolumn">
+                <div class="innertext">
+                    <b>Left column:<em>230px</em></b>
+                    <br/>
+                    Tekst (ladina keeles textum) on kitsamas tähenduses kirjakeele piiritletud[viide?] vorm. Laiemas tähenduses võib tekstina mõista igasugust kirjalikku informatsiooni, veel laiemas tähenduses ei pruugi tekst aga ka mitte kirjalik olla (kultuuritekst).
+
+Kirjakeele areng on andnud võimaluse vormistada ja säilitada suulise kultuuri pärandit tekstina. Suur osa ajaloolisest teabest pärineb kirjalikest allikatest.
+
+Teksti olemasolu põhineb kirjal, mille märkide abil on võimalik kodeerida foneeme, silpe, sõnu, arve, helisid jne. Erinevates kultuurides ja valdkondades on kasutusel erinevad märgisüsteemid. Teksti üheks olulisemaks omaduseks on lineaarsus.
+
+Informatsiooni võimet eksisteerida tekstina nimetatakse tekstuaalsuseks, mida uurib tekstilingvistika. Robert-Alain de Beaugrande ja Wolfgang Ulrich Dressler on 1981. aastal sätestanud terve rea tekstuaalsusekriteeriume: ühest küljest teksti enda tunnused nagu kohesioon ja koherentsus ning teiselt poolt kommunikatsiooniga seotud tunnused nagu intentsioon, aktsepteeritavus, informatiivsus ja situatsioonilisus.
+
+Kohesioon iseloomustab teksti grammatilist ühtekuuluvust: teksti erinevate lausete ja osade keelelised allstruktuurid on omavahel seotud ja loovad tuntava kokkukuuluvuse. Koherentsus iseloomustab teksti sisulist, loogilist seostatust. Kuigi kohesioon ja koherentsus kuuluvad kõige olulisemate tekstuaalsusekriteeriumide hulka, leidub ka erandeid: on olemas tekste, mis koosnevad seosetutest sõnadest või isegi häälitsustest, mis on osaliselt mõistetavad müraks redutseeritud kõlamaalingutena ja mis on tervikuna interpreteeritavad paljukihilistena. Sellist tekstuaalsust esineb näiteks dadaistidel.
+
+Situatsiooniga seotud tekstuaalsusekriteeriumide raames vaadeldakse tekste aspektist, kuidas saatja (Sender) loob selle teatud eesmärgiga (intentsioon) ning/või vastuvõtja (Empfänger) seda aktsepteerib. Et tekst oleks vastuvõtjale aktsepteeritav, sõltub sellest, kas tekst suudab luua oma kujuteldava maailma ja annab edasi selle situatsioone (situatsioonilisus) ning kas see sisaldab informatsiooni oodatud ja ootamatute, tuntud ja tundmatute elementide ja suhete kohta (informatiivsus). Dadaistide näitel ka esmapilgul mittekohesiooniline ja mittekoherentne tekst võib olla aktsepteeritav, kui vastuvõtja jõuab järeldusele, et saatja taotluseks on edastada üllatavat, normist kõrvale kalduvaid elemente sisaldavat teksti.
+
+Intertekstuaalsus on teksti omadus seostuda viidete ja tsitaatide abil teiste tekstidega.
+                </div>
+            </div>
+            <div id="rightcolumn">
+                <div class="innertext">
+                    <b>Right Column:<em>230px</em></b></br>
+                    Tekst (ladina keeles textum) on kitsamas tähenduses kirjakeele piiritletud[viide?] vorm. Laiemas tähenduses võib tekstina mõista igasugust kirjalikku informatsiooni, veel laiemas tähenduses ei pruugi tekst aga ka mitte kirjalik olla (kultuuritekst).
+
+                    Kirjakeele areng on andnud võimaluse vormistada ja säilitada suulise kultuuri pärandit tekstina. Suur osa ajaloolisest teabest pärineb kirjalikest allikatest.
+                    
+                    Teksti olemasolu põhineb kirjal, mille märkide abil on võimalik kodeerida foneeme, silpe, sõnu, arve, helisid jne. Erinevates kultuurides ja valdkondades on kasutusel erinevad märgisüsteemid. Teksti üheks olulisemaks omaduseks on lineaarsus.
+                    
+                    Informatsiooni võimet eksisteerida tekstina nimetatakse tekstuaalsuseks, mida uurib tekstilingvistika. Robert-Alain de Beaugrande ja Wolfgang Ulrich Dressler on 1981. aastal sätestanud terve rea tekstuaalsusekriteeriume: ühest küljest teksti enda tunnused nagu kohesioon ja koherentsus ning teiselt poolt kommunikatsiooniga seotud tunnused nagu intentsioon, aktsepteeritavus, informatiivsus ja situatsioonilisus.
+                    
+                    Kohesioon iseloomustab teksti grammatilist ühtekuuluvust: teksti erinevate lausete ja osade keelelised allstruktuurid on omavahel seotud ja loovad tuntava kokkukuuluvuse. Koherentsus iseloomustab teksti sisulist, loogilist seostatust. Kuigi kohesioon ja koherentsus kuuluvad kõige olulisemate tekstuaalsusekriteeriumide hulka, leidub ka erandeid: on olemas tekste, mis koosnevad seosetutest sõnadest või isegi häälitsustest, mis on osaliselt mõistetavad müraks redutseeritud kõlamaalingutena ja mis on tervikuna interpreteeritavad paljukihilistena. Sellist tekstuaalsust esineb näiteks dadaistidel.
+                    
+                    Situatsiooniga seotud tekstuaalsusekriteeriumide raames vaadeldakse tekste aspektist, kuidas saatja (Sender) loob selle teatud eesmärgiga (intentsioon) ning/või vastuvõtja (Empfänger) seda aktsepteerib. Et tekst oleks vastuvõtjale aktsepteeritav, sõltub sellest, kas tekst suudab luua oma kujuteldava maailma ja annab edasi selle situatsioone (situatsioonilisus) ning kas see sisaldab informatsiooni oodatud ja ootamatute, tuntud ja tundmatute elementide ja suhete kohta (informatiivsus). Dadaistide näitel ka esmapilgul mittekohesiooniline ja mittekoherentne tekst võib olla aktsepteeritav, kui vastuvõtja jõuab järeldusele, et saatja taotluseks on edastada üllatavat, normist kõrvale kalduvaid elemente sisaldavat teksti.
+                    
+                    Intertekstuaalsus on teksti omadus seostuda viidete ja tsitaatide abil teiste tekstidega.
+                </div>
+            </div>
+            <div id="footer">Footer</div>
+        </div>
+
+    </body>
+</html>

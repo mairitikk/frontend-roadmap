@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport"content="width=device-width,initial-scale=1">
+
+    <title>Attribute selectors</title>
+    <style>
+        [rel~=friend] {
+    font-size: 2em;
+    background: #eee;
+    padding: 4px;
+    text-decoration: none;
+    border-bottom: 3px solid #ccc;
+}
+[rel~=friend]:link,
+[rel~=friend]:visited {
+    color: #34444C;
+}
+[rel~=friend]:hover{
+    background: #ffeb3b;
+    border-color: #ffc107;
+}
+</style>
+    </head>
+    <body>
+        <a href="http://example.com/" rel="external friend">Bob</a>
+
+    </body>
+</html>
