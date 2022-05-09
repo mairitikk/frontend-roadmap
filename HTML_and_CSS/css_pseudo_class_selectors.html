@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport"content="width=device-width,initial-scale=1">
+
+    <title>Attribute selectors</title>
+    <style>
+     section:nth-child(4n+3) > h1{
+            color:red;
+        }
+       
+        article  a{
+            color: yellow;
+        }
+        article p + a :hover{
+            color:blue;
+
+        }
+        article > h1 + p {
+      color: green;
+    }
+       
+        </style>
+    </head>
+    <body>
+        <div class="main-content">
+            <section class="articles latest">
+                <h1>Latest post</h1>
+                <article>
+                    <h1>Todays news</h1>
+                    <p>
+                        Tekst (ladina keeles textum) on kitsamas tähenduses kirjakeele piiritletud[viide?] vorm. Laiemas tähenduses võib tekstina mõista igasugust kirjalikku informatsiooni, veel laiemas tähenduses ei pruugi tekst aga ka mitte kirjalik olla (kultuuritekst).
+
+Kirjakeele areng on andnud võimaluse vormistada ja säilitada suulise kultuuri pärandit tekstina. Suur osa ajaloolisest teabest pärineb kirjalikest allikatest.
+
+Teksti olemasolu põhineb kirjal, mille märkide abil on võimalik kodeerida foneeme, silpe, sõnu, arve, helisid jne. Erinevates kultuurides ja valdkondades on kasutusel erinevad märgisüsteemid. Teksti üheks olulisemaks omaduseks on lineaarsus.
+
+Informatsiooni võimet eksisteerida tekstina nimetatakse tekstuaalsuseks, mida uurib tekstilingvistika. Robert-Alain de Beaugrande ja Wolfgang Ulrich Dressler on 1981. aastal sätestanud terve rea tekstuaalsusekriteeriume: ühest küljest teksti enda tunnused nagu kohesioon ja koherentsus ning teiselt poolt kommunikatsiooniga seotud tunnused nagu intentsioon, aktsepteeritavus, informatiivsus ja situatsioonilisus.
+
+Kohesioon iseloomustab teksti grammatilist ühtekuuluvust: teksti erinevate lausete ja osade keelelised allstruktuurid on omavahel seotud ja loovad tuntava kokkukuuluvuse. Koherentsus iseloomustab teksti sisulist, loogilist seostatust. Kuigi kohesioon ja koherentsus kuuluvad kõige olulisemate tekstuaalsusekriteeriumide hulka, leidub ka erandeid: on olemas tekste, mis koosnevad seosetutest sõnadest või isegi häälitsustest, mis on osaliselt mõistetavad müraks redutseeritud kõlamaalingutena ja mis on tervikuna interpreteeritavad paljukihilistena. Sellist tekstuaalsust esineb näiteks dadaistidel.
+<a href="#">More</a>
+                   
+</p>
+<a href="#">Rate</a> 
+                </article>
+                <article>
+                    <h1>Yesterday's news</h1>
+                    <p>
+                        Tekst (ladina keeles textum) on kitsamas tähenduses kirjakeele piiritletud[viide?] vorm. Laiemas tähenduses võib tekstina mõista igasugust kirjalikku informatsiooni, veel laiemas tähenduses ei pruugi tekst aga ka mitte kirjalik olla (kultuuritekst).
+
+Kirjakeele areng on andnud võimaluse vormistada ja säilitada suulise kultuuri pärandit tekstina. Suur osa ajaloolisest teabest pärineb kirjalikest allikatest.
+
+Teksti olemasolu põhineb kirjal, mille märkide abil on võimalik kodeerida foneeme, silpe, sõnu, arve, helisid jne. Erinevates kultuurides ja valdkondades on kasutusel erinevad märgisüsteemid. Teksti üheks olulisemaks omaduseks on lineaarsus.
+
+Informatsiooni võimet eksisteerida tekstina nimetatakse tekstuaalsuseks, mida uurib tekstilingvistika. Robert-Alain de Beaugrande ja Wolfgang Ulrich Dressler on 1981. aastal sätestanud terve rea tekstuaalsusekriteeriume: ühest küljest teksti enda tunnused nagu kohesioon ja koherentsus ning teiselt poolt kommunikatsiooniga seotud tunnused nagu intentsioon, aktsepteeritavus, informatiivsus ja situatsioonilisus.
+
+Kohesioon iseloomustab teksti grammatilist ühtekuuluvust: teksti erinevate lausete ja osade keelelised allstruktuurid on omavahel seotud ja loovad tuntava kokkukuuluvuse. Koherentsus iseloomustab teksti sisulist, loogilist seostatust. Kuigi kohesioon ja koherentsus kuuluvad kõige olulisemate tekstuaalsusekriteeriumide hulka, leidub ka erandeid: on olemas tekste, mis koosnevad seosetutest sõnadest või isegi häälitsustest, mis on osaliselt mõistetavad müraks redutseeritud kõlamaalingutena ja mis on tervikuna interpreteeritavad paljukihilistena. Sellist tekstuaalsust esineb näiteks dadaistidel.
+                   
+<a href="#">More</a>
+
+  </p>
+  <a href="#">Rate</a>
+                </article>
+            </section>
+            <section class="articles arcived">
+                <h1>Old posts</h1>
+                <article>
+                    <h1>Old text</h1>
+                    <p>
+                        Tekst (ladina keeles textum) on kitsamas tähenduses kirjakeele piiritletud[viide?] vorm. Laiemas tähenduses võib tekstina mõista igasugust kirjalikku informatsiooni, veel laiemas tähenduses ei pruugi tekst aga ka mitte kirjalik olla (kultuuritekst).
+
+Kirjakeele areng on andnud võimaluse vormistada ja säilitada suulise kultuuri pärandit tekstina. Suur osa ajaloolisest teabest pärineb kirjalikest allikatest.
+
+Teksti olemasolu põhineb kirjal, mille märkide abil on võimalik kodeerida foneeme, silpe, sõnu, arve, helisid jne. Erinevates kultuurides ja valdkondades on kasutusel erinevad märgisüsteemid. Teksti üheks olulisemaks omaduseks on lineaarsus.
+<a href="#">More</a>
+
+
+                    </p>
+                    <a href="#">Rate</a>
+                </article>
+            </section>
+            <aside>
+                <section class="glossary">
+                    <dl>
+                        <dt>Term1</dt>
+                        <dd>Definition for Term1</dd>
+                    </dl>
+                </section>
+            </aside>
+      
+            <section class="articles latest">
+                <h1>Latest post</h1>
+                <article>
+                    <h1>Todays news</h1>
+                    <p>
+                        Tekst (ladina keeles textum) on kitsamas tähenduses kirjakeele piiritletud[viide?] vorm. Laiemas tähenduses võib tekstina mõista igasugust kirjalikku informatsiooni, veel laiemas tähenduses ei pruugi tekst aga ka mitte kirjalik olla (kultuuritekst).
+
+Kirjakeele areng on andnud võimaluse vormistada ja säilitada suulise kultuuri pärandit tekstina. Suur osa ajaloolisest teabest pärineb kirjalikest allikatest.
+
+Teksti olemasolu põhineb kirjal, mille märkide abil on võimalik kodeerida foneeme, silpe, sõnu, arve, helisid jne. Erinevates kultuurides ja valdkondades on kasutusel erinevad märgisüsteemid. Teksti üheks olulisemaks omaduseks on lineaarsus.
+
+Informatsiooni võimet eksisteerida tekstina nimetatakse tekstuaalsuseks, mida uurib tekstilingvistika. Robert-Alain de Beaugrande ja Wolfgang Ulrich Dressler on 1981. aastal sätestanud terve rea tekstuaalsusekriteeriume: ühest küljest teksti enda tunnused nagu kohesioon ja koherentsus ning teiselt poolt kommunikatsiooniga seotud tunnused nagu intentsioon, aktsepteeritavus, informatiivsus ja situatsioonilisus.
+
+Kohesioon iseloomustab teksti grammatilist ühtekuuluvust: teksti erinevate lausete ja osade keelelised allstruktuurid on omavahel seotud ja loovad tuntava kokkukuuluvuse. Koherentsus iseloomustab teksti sisulist, loogilist seostatust. Kuigi kohesioon ja koherentsus kuuluvad kõige olulisemate tekstuaalsusekriteeriumide hulka, leidub ka erandeid: on olemas tekste, mis koosnevad seosetutest sõnadest või isegi häälitsustest, mis on osaliselt mõistetavad müraks redutseeritud kõlamaalingutena ja mis on tervikuna interpreteeritavad paljukihilistena. Sellist tekstuaalsust esineb näiteks dadaistidel.
+<a href="#">More</a>
+                   
+</p>
+<a href="#">Rate</a> 
+                </article>
+                <article>
+                    <h1>Yesterday's news</h1>
+                    <p>
+                        Tekst (ladina keeles textum) on kitsamas tähenduses kirjakeele piiritletud[viide?] vorm. Laiemas tähenduses võib tekstina mõista igasugust kirjalikku informatsiooni, veel laiemas tähenduses ei pruugi tekst aga ka mitte kirjalik olla (kultuuritekst).
+
+Kirjakeele areng on andnud võimaluse vormistada ja säilitada suulise kultuuri pärandit tekstina. Suur osa ajaloolisest teabest pärineb kirjalikest allikatest.
+
+Teksti olemasolu põhineb kirjal, mille märkide abil on võimalik kodeerida foneeme, silpe, sõnu, arve, helisid jne. Erinevates kultuurides ja valdkondades on kasutusel erinevad märgisüsteemid. Teksti üheks olulisemaks omaduseks on lineaarsus.
+
+Informatsiooni võimet eksisteerida tekstina nimetatakse tekstuaalsuseks, mida uurib tekstilingvistika. Robert-Alain de Beaugrande ja Wolfgang Ulrich Dressler on 1981. aastal sätestanud terve rea tekstuaalsusekriteeriume: ühest küljest teksti enda tunnused nagu kohesioon ja koherentsus ning teiselt poolt kommunikatsiooniga seotud tunnused nagu intentsioon, aktsepteeritavus, informatiivsus ja situatsioonilisus.
+
+Kohesioon iseloomustab teksti grammatilist ühtekuuluvust: teksti erinevate lausete ja osade keelelised allstruktuurid on omavahel seotud ja loovad tuntava kokkukuuluvuse. Koherentsus iseloomustab teksti sisulist, loogilist seostatust. Kuigi kohesioon ja koherentsus kuuluvad kõige olulisemate tekstuaalsusekriteeriumide hulka, leidub ka erandeid: on olemas tekste, mis koosnevad seosetutest sõnadest või isegi häälitsustest, mis on osaliselt mõistetavad müraks redutseeritud kõlamaalingutena ja mis on tervikuna interpreteeritavad paljukihilistena. Sellist tekstuaalsust esineb näiteks dadaistidel.
+                   
+<a href="#">More</a>
+
+  </p>
+  <a href="#">Rate</a>
+                </article>
+            </section>
+            <section class="articles arcived">
+                <h1>Old posts</h1>
+                <article>
+                    <h1>Old text</h1>
+                    <p>
+                        Tekst (ladina keeles textum) on kitsamas tähenduses kirjakeele piiritletud[viide?] vorm. Laiemas tähenduses võib tekstina mõista igasugust kirjalikku informatsiooni, veel laiemas tähenduses ei pruugi tekst aga ka mitte kirjalik olla (kultuuritekst).
+
+Kirjakeele areng on andnud võimaluse vormistada ja säilitada suulise kultuuri pärandit tekstina. Suur osa ajaloolisest teabest pärineb kirjalikest allikatest.
+
+Teksti olemasolu põhineb kirjal, mille märkide abil on võimalik kodeerida foneeme, silpe, sõnu, arve, helisid jne. Erinevates kultuurides ja valdkondades on kasutusel erinevad märgisüsteemid. Teksti üheks olulisemaks omaduseks on lineaarsus.
+<a href="#">More</a>
+
+
+                    </p>
+                    <a href="#">Rate</a>
+                </article>
+            </section>
+            <aside>
+                <section class="glossary">
+                    <dl>
+                        <dt>Term1</dt>
+                        <dd>Definition for Term1</dd>
+                    </dl>
+                </section>
+            </aside>
+        </div>
+        <footer>
+           <small> &copy;2014 all rights reserved</small>
+           <p>See our <a href="#">Terms &amp; Condition</a></p>
+        </footer>
+    </body>
+</html>
