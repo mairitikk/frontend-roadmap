@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Text and font propertiea</title>
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+  
+  <style>
+      /**
+ font-family saab panna erinevaid ja parem on mitu panna, sest erinevad veebilehitsejad ei toeta koiki, eraldada komadega**/
+        /**
+  line-height
+    inherit
+    normal    
+    [value]
+    [percentage]
+    font-size
+  specify the size of a font. 
+  values:inherit,xx-small,x-small,small,large, x-large,xx-large,smaller, larger
+    [length]
+    [percentage]
+**/ 
+/**
+      background
+        color url repeat position
+**/
+ 
+body{
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          background:transparent url(http://www.designbolts.com/wp-content/uploads/2013/02/Diamond-Grey-Seamless-Pattern-For-Website-Background.jpg) repeat left top;
+ 
+        line-height: 2.5;
+         letter-spacing: normal;
+         word-spacing: 30%;
+         text-align: center;
+         font-size: larger;
+      
+   
+      }
+      
+/**
+ font-weight: 
+   inherit
+   normal
+   bold
+   lighter
+   100 - 400  = normal
+   500 - 700  = bold
+   800 - 900  = extra bold (not supported from all browsers)
+**/
+h1,h2,h3,h4,h5,h6 {
+    font-weight: bolder;
+    line-height-step: 2.5;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+
+    /**
+      color: red;
+      color: currentcolor;  
+      color: rgb(), rgba(), #RRGGBB, hsl()
+**/      
+color: rgba(0, 168, 69, 1);
+}
+
+/**
+  font-style:
+    inherit,normal,italic,oblique
+**/em {
+
+       font-style: inherit;
+    }
+    /**
+      text-transform
+        inherit,capitalize, uppercase,lowercase, none (default)
+**/
+    p {
+      text-indent: 1em;
+      text-transform: capitalize;
+    }
+    /**
+ text-decoration
+   inherit,none,underline,overline,line-through
+**/
+    strong {
+
+      text-decoration: overline;
+    }
+    </style>
+</head>
+<body>
+    <h1>Suur pealkiri</h1>
+    <p>
+        Tekst (ladina keeles textum) on kitsamas tähenduses kirjakeele piiritletud[viide?] vorm. Laiemas tähenduses võib tekstina mõista igasugust kirjalikku informatsiooni, veel laiemas tähenduses ei pruugi tekst aga ka mitte kirjalik olla (kultuuritekst).
+
+Kirjakeele areng on andnud võimaluse vormistada ja säilitada suulise kultuuri pärandit tekstina. Suur osa ajaloolisest teabest pärineb kirjalikest allikatest.
+
+Teksti olemasolu põhineb kirjal, mille märkide abil on võimalik kodeerida foneeme, silpe, sõnu, arve, helisid jne. Erinevates kultuurides ja valdkondades on kasutusel erinevad märgisüsteemid. Teksti üheks olulisemaks omaduseks on lineaarsus.
+
+Informatsiooni võimet eksisteerida tekstina nimetatakse tekstuaalsuseks, mida uurib tekstilingvistika. Robert-Alain de Beaugrande ja Wolfgang Ulrich Dressler on 1981. aastal sätestanud terve rea tekstuaalsusekriteeriume: ühest küljest teksti enda tunnused nagu kohesioon ja koherentsus ning teiselt poolt kommunikatsiooniga seotud tunnused nagu intentsioon, aktsepteeritavus, informatiivsus ja situatsioonilisus.
+
+Kohesioon iseloomustab teksti grammatilist ühtekuuluvust: teksti erinevate lausete ja osade keelelised allstruktuurid on omavahel seotud ja loovad tuntava kokkukuuluvuse. Koherentsus iseloomustab teksti sisulist, loogilist seostatust. Kuigi kohesioon ja koherentsus kuuluvad kõige olulisemate tekstuaalsusekriteeriumide hulka, leidub ka erandeid: on olemas tekste, mis koosnevad seosetutest sõnadest või isegi häälitsustest, mis on osaliselt mõistetavad müraks redutseeritud kõlamaalingutena ja mis on tervikuna interpreteeritavad paljukihilistena. Sellist tekstuaalsust esineb näiteks dadaistidel.
+
+<strong> seotud tekstuaalsusekriteeriumide raames vaadeldakse tekste aspektist, kuidas saatja (Sender) loob selle teatud eesmärgiga (intentsioon) ning/või vastuvõtja (Empfänger) seda aktsepteerib. Et tekst oleks vastuvõtjale aktsepteeritav, sõltub sellest, kas tekst suudab luua oma kujuteldava maailma ja annab edasi selle situatsioone (situatsioonilisus) ning kas see sisaldab informatsiooni oodatud ja ootamatute, tuntud ja tundmatute elementide ja suhete kohta (informatiivsus). Dadaistide näitel ka esmapilgul mittekohesiooniline ja mittekoherentne tekst võib olla aktsepteeritav, kui vastuvõtja jõuab järeldusele, et saatja taotluseks on edastada üllatavat, normist kõrvale kalduvaid elemente sisaldavat teksti.</strong>
+    </p>
+    <h2>Vaike pealkiri</h2>
+    <p>Tekst (ladina keeles textum) on kitsamas tähenduses kirjakeele piiritletud[viide?] vorm. Laiemas tähenduses võib tekstina mõista igasugust kirjalikku informatsiooni, veel laiemas tähenduses ei pruugi tekst aga ka mitte kirjalik olla (kultuuritekst).
+
+        Kirjakeele areng on andnud võimaluse vormistada ja säilitada suulise kultuuri pärandit tekstina. Suur osa ajaloolisest teabest pärineb kirjalikest allikatest.
+        
+       <em> Teksti olemasolu põhineb kirjal, mille märkide abil on võimalik kodeerida foneeme, silpe, sõnu, arve, helisid jne. Erinevates kultuurides ja valdkondades on kasutusel erinevad märgisüsteemid. Teksti üheks olulisemaks omaduseks on lineaarsus.</em></p>
+
+</body>
+</html>
