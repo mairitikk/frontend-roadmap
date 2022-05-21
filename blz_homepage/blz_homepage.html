@@ -2,6 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Bliz</title>
     <link rel="stylesheet" href="http://meyerweb.com/eric/tools/css/reset/reset.css">
 <link href='http://fonts.googleapis.com/css?family=Economica:400,700|Pacifico' rel='stylesheet' type='text/css'>
@@ -39,6 +40,12 @@
             padding-bottom: 2em;
 
         }
+        .page-header h1 {
+        position: absolute;
+        overflow: hidden;
+        top: -100%;
+        left: -100%;
+    }
             .page-header > div {
                 
                 position: relative;
@@ -101,7 +108,7 @@
             content: " ";
             display: block;
             height: 5px;
-            background: url(../frontend-roadmap/pattern.png) left top repeat-x;
+            background: url(../blz_homepage/pattern.png) left top repeat-x;
         }
         .page-footer{
             background-color: #f4f4f4;
@@ -155,7 +162,44 @@
         float:left;
         width: 75%;
     }
+    .portfolio{
+        position: relative;
+       
+    }
+    .portfolio:before{
+        content:" ";
+        display: block;
+        height: 30px;
+        background: url(../blz_homepage/pattern.png) left top repeat-x;
+        margin-bottom: 2em;
+    }
+    .portfolio .title-wrapper{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        text-align: center;
+    }
+    .portfolio h2{
+        display: inline;
+        background-color: #fff;
+        padding: 0.8em;
 
+    }
+    .work{
+        float: left;
+        width: 22%;
+        margin-right: 4%;
+    }
+    .work:last-child{
+        margin-right: 0;
+    }
+    .work figure{
+        margin-bottom: 1em;
+    }
+    .work figure > img{
+        width:100%;
+    }
         </style>
 </head>
 
@@ -217,6 +261,72 @@
             </article>
 
         </section>
+
+        <!--Portfolio-->
+        <section class="portfolio data-block">
+        <div class="title-wrapper">
+            <h2>My latest work</h2>
+        </div>
+        <div class="clearfix">
+            <article class="work">
+                <figure>
+                    <img src="beach.jpg">
+                </figure>
+
+                <h3> Siia pealkiri omal soovil</h3>
+                <p>Eesti keel (varasem nimetus maakeel) on läänemeresoome lõunarühma kuuluv keel.
+
+                    Eesti keel on Eesti riigikeel ja 2004. aastast ka üks Euroopa Liidu ametlikest keeltest.
+                    
+                    </p>
+                    <i class="fa fa-angle-double-right"></i>
+                    <a href="#" class="title">view project</a>
+            </article>
+            <article class="work">
+                <figure>
+                    <img src="beach.jpg">
+                </figure>
+
+                <h3> Siia pealkiri omal soovil</h3>
+                <p>Eesti keel (varasem nimetus maakeel) on läänemeresoome lõunarühma kuuluv keel.
+
+                    Eesti keel on Eesti riigikeel ja 2004. aastast ka üks Euroopa Liidu ametlikest keeltest.
+                     
+                   </p>
+                    <i class="fa fa-angle-double-right"></i>
+                    <a href="#" class="title">view project</a>
+            </article>
+            <article class="work">
+                <figure>
+                    <img src="beach.jpg">
+                </figure>
+
+                <h3> Siia pealkiri omal soovil</h3>
+                <p>Eesti keel (varasem nimetus maakeel) on läänemeresoome lõunarühma kuuluv keel.
+
+                    Eesti keel on Eesti riigikeel ja 2004. aastast ka üks Euroopa Liidu ametlikest keeltest.
+                    
+                    .</p>
+                    <i class="fa fa-angle-double-right"></i>
+                    <a href="#" class="title">view project</a>
+            </article>
+            <article class="work">
+                <figure>
+                    <img src="beach.jpg">
+                </figure>
+
+                <h3> Siia pealkiri omal soovil</h3>
+                <p>Eesti keel (varasem nimetus maakeel) on läänemeresoome lõunarühma kuuluv keel.
+
+                    Eesti keel on Eesti riigikeel ja 2004. aastast ka üks Euroopa Liidu ametlikest keeltest.
+                    
+                  </p>
+                    <i class="fa fa-angle-double-right"></i>
+                    <a href="#" class="title">view project</a>
+            </article>
+
+        </div>
+    </section>
 
     </section>
 
