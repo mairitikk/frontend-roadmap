@@ -1,0 +1,76 @@
+.search{
+    font-size: 16px;
+    width: 500px;
+    border-style: none;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 30px;
+    margin-top: 20px;
+    margin-left: 20px;
+
+}
+.email{
+    color: rgb(163, 158, 158);
+    font-size: 16px;
+}
+.email2{
+    font-size: 16px;
+    border-radius: 5px;
+    width: 400px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(100, 100, 100);
+    padding-top: 7px;
+    padding-bottom: 7px;
+    height: 30px;
+    
+}
+.agree{
+    background-color: rgb(81, 81, 251);
+    border: none;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    width: 400px;
+    border-radius: 30px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    cursor: pointer;
+}
+.cat{
+    margin-top: 50px;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+border-radius: 25px;
+vertical-align: middle;
+margin-right: 5px;
+}
+.text-box{
+    font-size: 18px;
+    border: none;
+    width: 300px;
+    color:  rgb(163, 158, 158);
+    vertical-align: middle;
+}
+.tweet{
+    background-color:rgb(29, 155, 240);
+    color: white;
+    border: none;
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 30px;
+    width: 300px;
+    
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 16px;
+    padding-left: 16px;
+    vertical-align: middle;
+
+}
+    
