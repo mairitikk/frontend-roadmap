@@ -14,19 +14,28 @@
         .search-bar{
             font-size: 20px;
             margin-left: 12px;
+            display: block;
         }
-        .video{
+        .video.title{
             width: 300px;
         }
        
+       .video-preview{
+           width: 300px;
+           display: inline-block;
+           vertical-align: top;
+           margin-right: 15px;
+
+       }
 
     </style>
 </head>
 <body>
     <input class="search-bar" type="text" placeholder="Search">
+    <div class="video-preview">
     <img class="thumbnail" src="thumbnails/thumbnail-1.webp">
     
-    <p class="video">
+    <p class="video.title">
         
     Talking Tech and AI with Google CEO Sundar Pichai!
     </p>
@@ -36,5 +45,21 @@
     <p class="andmed">
         3.4M views &middot; 6 months ago
     </p>
+    </div>
+    <div class="video-preview">
+        <img class="thumbnail" src="thumbnails/thumbnail-2.webp">
+        
+        <p class="video.title">
+            
+        Try Not To Laugh Challenge #9
+        </p>
+        <p class="autor">
+            Markiplier
+        </p>
+        <p class="andmed">
+            19M views &middot; 4 months ago
+        </p>
+        </div>
+   
 </body>
 </html>
