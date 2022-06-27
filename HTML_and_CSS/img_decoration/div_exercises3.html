@@ -9,7 +9,7 @@
         div{
             margin-right: 15px;
             width: 200px;
-           display: inline-block;
+           
             box-shadow: 0 0 5px rgba(0,0,0,0.3);
         }
         .cat{
@@ -52,42 +52,53 @@
             font-size: 16px;
 
         }
+
+        .grid{
+            display: grid;
+            grid-template-columns: 200px 200px 200px;
+            column-gap: 20px;
+
+        }
         
         
 
     </style>
 </head>
 <body>
-    <div>
-    <img class="cat" src="cat.jpg">
-    <p class="name">
-        Oliver
-    </p>
-    <p class="text">
-        2 mutual friends
-    </p>
-    <button>Add Friends</button>
-</div>
-<div>
-    <img class="cat" src="cat.jpg">
-    <p class="name">
-        Oliver
-    </p>
-    <p class="text">
-        2 mutual friends
-    </p>
-    <button>Add Friends</button>
-</div>
-<div>
-    <img class="cat" src="cat.jpg">
-    <p class="name">
-        Oliver
-    </p>
-    <p class="text">
-        2 mutual friends
-    </p>
-    <button>Add Friends</button>
-</div>
+    <div class="grid">
+        <div>
+            <img class="cat" src="cat.jpg">
+            <p class="name">
+                Oliver
+            </p>
+            <p class="text">
+                2 mutual friends
+            </p>
+            <button>Add Friends</button>
+        </div>
+        <div>
+            <img class="cat" src="cat.jpg">
+            <p class="name">
+                Oliver
+            </p>
+            <p class="text">
+                2 mutual friends
+            </p>
+            <button>Add Friends</button>
+        </div>
+        <div>
+            <img class="cat" src="cat.jpg">
+            <p class="name">
+                Oliver
+            </p>
+            <p class="text">
+                2 mutual friends
+            </p>
+            <button>Add Friends</button>
+        </div>
+
+    </div>
+   
     
 </body>
 </html>
