@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position fixed</title>
+</head>
+<style>
+    body{
+        height: 3000px;
+    }
+    div{
+    font-family: Arial;    
+    }
+    .sidebar1{
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        bottom: 0px;
+        
+        background-color: rgb(33, 33, 33);
+       
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .picture{
+        width: 50px;
+        height: 50px;
+        border-radius: 25px;
+        object-fit: cover;
+        margin-bottom: 10px;
+
+    }
+    .sidebar2{
+        position: fixed;
+        top: 0px;
+        left: 70px;
+        bottom: 0px;
+        
+        background-color: rgb(55, 55, 55);
+        width: 150px;
+        padding-top: 15px;
+        padding-left: 15px;
+        padding-right: 15px;
+
+    }
+    .header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+        
+    }
+    .name{
+        color: white;
+        font-size: 14px;
+        
+    }
+    .create-new{
+        color: rgb(150,150,150);
+       font-size: 25px;
+    }
+    .channel1{
+        color: rgb(150,150,150);
+        margin-bottom: 16px;
+    }
+</style>
+<body>
+    <div class="sidebar1">
+        <div>
+            <img class="picture" src="cat.jpg">
+        </div>
+        <div>
+            <img class="picture" src="cat2.jpg">
+
+        </div>
+        <div>
+            <img class="picture" src="dog.jpg">
+        </div>
+    </div>
+
+    <div class="sidebar2">
+        <div class="header">
+            <div class="name">INFO</div>
+            <div class="create-new">+</div>
+        </div>
+        <div class="channel1"># new-videos</div>
+        <div class="channel1"># updates</div>
+        <div class="channel1"># faq</div>
+    </div>
+</body>
+</html>
