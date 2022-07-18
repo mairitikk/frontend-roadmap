@@ -6,20 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .img{
+        .product-container{
             position: relative;
+            display:inline-block;
         }
-        .shirt{
-            height:500px;
-            width: 350px;
+        .product-image{
+            height:300px;
+            width: 300px;
+            object-fit: cover;
         }
-        .off{
+        .promotion{
             background-color: black;
             color: white;
             font-size: 20px;
             font-family: Arial, Helvetica, sans-serif;
             position: absolute;
-            display: inline-block;
+            top:10px;
+            right: 10px;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            padding-left: 12px;
+            padding-right: 12px;
+        }
+        .bottom-overlay{
+            background-color: rgba(255, 255, 255, 0.8);
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+            left: 0px;;
+            height:80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .button{
+            
+            border: solid;
+            border-color: black;
+            border-width: 1px;
+            background-color: white;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 15px;
+            padding-right: 15px;
+            
         }
         
     </style>
@@ -29,9 +60,12 @@
     
     ">
     
-        <div class="img">
-            <img class="shirt" src="shirt.jpg"> 
-            <div class="off">20% OFF</div>
+        <div class="product-container">
+            <img class="product-image" src="shirt.jpg"> 
+            <div class="promotion">20% OFF</div>
+            <div class="bottom-overlay">
+                <button class="add-to-cart-button">Add to Cart<button>
+                </div>
         </div>
 
     
