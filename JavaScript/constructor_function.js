@@ -14,3 +14,7 @@ function Car(brand, year){
   
   var oldChevy= new Car("Chevy", 1980);
   var newFerrari= new Car("Ferrari", 2002);
+
+  function double(number){
+    return number*2
+  };
