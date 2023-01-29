@@ -9,28 +9,34 @@ console.log(email);
 console.log(age, year);
 age= 30;
 console.log(age);
-
+// string concatenation
 let firstName = 'Mairi';
 let lastName = 'Tikk';
 let fullName = firstName + ' ' + lastName;
 
 console.log(firstName, lastName, fullName);
-
+// getting characters
 console.log(firstName[4]);
 console.log(fullName.length);
+
+//string methods
 console.log(fullName.toUpperCase());
 let result = fullName.toLowerCase();
 console.log(result, fullName);
+
 let index = email.indexOf('@');
 console.log(index);
+
 //common string methods leiad, mitmes on taht n
 let email1 = 'martinchrisguzmantikk@gmail.com';
 let result1 = email1.lastIndexOf('n'); 
 console.log(result1);
+
 // loikad ara mis koha pealt tahad
 let email2 = 'mairi.tikk@mail.com';
 let result2 = email2.slice(0,5);
 console.log(result2);
+
 // asendad yhe t2he teisega
 
 let email3 = 'mairi.tikk@hotmail.com';
@@ -47,6 +53,8 @@ console.log(10 / 2);
 
 let result4 = radius % 3;
 console.log(result4);
+let result14 = pi * radius**2;
+console.log(result14);
 
 let like = 10;
 
@@ -119,8 +127,10 @@ flovers[2] = 'krysanteem';
  
  let vanus = 0;
 console.log(vanus, vanus + 3,'vanus on ${vanus}');
+
 // boolean and comparations
 console.log(true, false, 'true', 'false');
+
 //methods can return boolean
 let email4 = 'minni.mause@gmail.com';
 let result12 = email4.includes('@');
