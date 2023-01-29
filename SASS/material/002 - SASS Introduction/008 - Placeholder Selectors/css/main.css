@@ -1,0 +1,19 @@
+.nav {
+  background-color: #00731a; }
+  .nav ul li {
+    list-style: none; }
+  .nav a {
+    text-decoration: none;
+    font-size: 20px;
+    color: gray; }
+    .nav a:hover {
+      color: royalblue; }
+
+h1, .footer h3 {
+  color: orange;
+  font-size: 40px;
+  background-color: gray;
+  text-align: center; }
+
+h1:hover, .footer h3:hover {
+  background-color: green; }

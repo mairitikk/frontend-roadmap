@@ -1,0 +1,65 @@
+$color-primary: orange;
+$color-secondary: gray;
+$color-tertiary: royalblue;
+
+$font-lg: 40px;
+$font-md: 30px;
+$font-sm: 20px;
+
+.nav {
+    background-color: $color-primary;
+    
+    ul li {
+        list-style: none;
+    }
+     
+    a {
+        text-decoration: none;
+        font-size: $font-sm;
+        color: $color-secondary;
+        
+        &:hover {
+            color: $color-tertiary;
+        }
+    }
+}
+
+.banner h1 {
+    font-size: $font_lg;
+    color: $color-secondary;
+    text-align: center;
+}
+
+.footer h3 {
+    font-size: $font-md;
+    color: $color-secondary;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

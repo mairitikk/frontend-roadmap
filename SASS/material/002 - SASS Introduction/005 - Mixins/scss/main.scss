@@ -1,0 +1,77 @@
+$color-primary: orange;
+$color-secondary: gray;
+$color-tertiary: royalblue;
+
+$font-lg: 40px;
+$font-md: 30px;
+$font-sm: 20px;
+
+.nav {
+    background-color: $color-primary;
+    
+    ul li {
+        list-style: none;
+    }
+     
+    a {
+        text-decoration: none;
+        font-size: $font-sm;
+        color: $color-secondary;
+        
+        &:hover {
+            color: $color-tertiary;
+        }
+    }
+}
+
+@mixin headingStyles($fontSize: 50px) {
+    font-size: $fontSize;
+    color: $color-secondary;
+    text-align: center;
+}
+
+@mixin transition($param...) {
+    transition: $param;
+}
+
+.banner h1 {
+    @include headingStyles($font-lg);
+}
+
+.footer h3 {
+    @include headingStyles;
+    @include transition(color .5s, background-color 1s);
+    
+    &:hover {
+        color: $color-tertiary;
+        background-color: $color-primary;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

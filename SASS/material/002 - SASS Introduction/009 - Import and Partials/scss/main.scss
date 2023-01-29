@@ -1,0 +1,74 @@
+@import "test";
+
+$color-primary: orange;
+$color-secondary: gray;
+$color-tertiary: royalblue;
+
+$font-lg: 40px;
+$font-md: 30px;
+$font-sm: 20px;
+
+.nav {
+    background-color: 
+        mix(blue, green, 10%);
+    
+    ul li {
+        list-style: none;
+    }
+     
+    a {
+        text-decoration: none;
+        font-size: $font-sm;
+        color: $color-secondary;
+        
+        &:hover {
+            color: $color-tertiary;
+        }
+    }
+}
+
+%heading {
+    color: $color-primary;
+    font-size: $font-lg;
+    background-color: $color-secondary;
+    text-align: center;
+}
+
+h1 {
+    @extend %heading;
+    
+    &:hover {
+        background-color: green;
+    }
+}
+
+.footer h3 {
+    @extend h1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
