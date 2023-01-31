@@ -19,4 +19,8 @@
 - generate css: node-sass -o css scss/main.scss -w
 
 ## for starting 
-npn run watch
+npm run watch
+
+## restart terminal ctrl +c
+y (yes)
+and npm run watch
