@@ -12,13 +12,19 @@ body {
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url(../images/bg.jpeg) center no-repeat;
   background-size: cover; }
   .header .brand {
+    display: flex;
+    align-items: center;
     position: absolute;
     top: 15%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    color: #fff;
-    display: flex;
-    align-items: center; }
+    transform: translate(-50%, -50%); }
+  .header-banner {
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
 
 .logo {
   text-decoration: none;
@@ -28,6 +34,46 @@ body {
   height: 110px;
   border: 3px solid #d3ab55;
   border-radius: 50%;
+  margin-right: 20px;
   display: flex;
   justify-content: center;
   align-items: center; }
+
+.main-name {
+  font-family: "Nunito", sans-serif;
+  font-size: 50px;
+  color: #bbb;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase; }
+
+.sub-name {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 18px;
+  color: #bbb;
+  text-align: center;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase; }
+
+.main-heading {
+  font-family: "Dancin Script", cursive;
+  font-size: 100px;
+  font-weight: 300;
+  color: #d3ab55;
+  margin-bottom: 40px; }
+
+.sub-heading {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 60px;
+  font-weight: 300;
+  color: #bbb;
+  margin-bottom: 80px; }
+
+.main-btn {
+  width: 170px;
+  height: 45px;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px; }
