@@ -58,6 +58,10 @@ body {
       .about-us-right .description::first-letter {
         padding-left: 50px; }
 
+.gallery .cards-wrapper {
+  display: flex;
+  flex-wrap: wrap; }
+
 .logo {
   text-decoration: none;
   font-size: 70px;
@@ -115,7 +119,11 @@ body {
   border: 1px solid #d3ab55;
   outline: none;
   cursor: pointer;
-  transition-property: all .4s; }
+  transition-property: all .4s;
+  margin-bottom: 50px; }
   .main-btn:hover {
     background-color: #d3ab55;
     color: #262626; }
+
+.card {
+  width: 33.3333%; }
