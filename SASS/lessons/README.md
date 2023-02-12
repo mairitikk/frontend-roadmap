@@ -15,7 +15,10 @@
 ## npm
 
 - create package.json: npm init --yes
+
+
 ## Node SASS
+npm install -g node-sass
 - generate css: node-sass -o css scss/main.scss -w
 
 ## for starting 
