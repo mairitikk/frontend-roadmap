@@ -16,10 +16,10 @@
 
 - create package.json: npm init --yes
 
-
 ## Node SASS
-npm install -g node-sass
+- instalar Sass: npm install -g node-sass (only one time)
 - generate css: node-sass -o css scss/main.scss
+- generate css with watch: node-sass -o css scss/main.scss -w
 
 ## for starting 
 npm run watch
@@ -27,3 +27,6 @@ npm run watch
 ## restart terminal ctrl +c
 y (yes)
 and npm run watch
+
+# Steps 
+
