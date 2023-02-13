@@ -1,0 +1,14 @@
+$colors: (
+    1:red,
+    2:green,
+    3:blue,
+    4:orange,
+    5: black,
+    6: grey
+);
+//key word THROUGH on see  number kaasa arvatud aga TO on kuni selle numbrini
+@for $i from 1 through 6 {
+    .paragraph-#{$i} {
+        background-color: map-get($colors, $i);
+    }
+}
