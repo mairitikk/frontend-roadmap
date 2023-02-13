@@ -24,3 +24,40 @@
     border: 1px solid red;
 }
 
+//Maps
+$colors: (
+    primary: red,
+    secondary: green,
+    tertiary: blue
+);
+
+h1 {
+    color: map-get($colors, primary);
+    background-color: map-get($colors, secondary);
+}
+$colors: (
+    1: red,
+    2: green,
+    3: blue
+);
+
+h1 {
+    color: map-get($colors, 1);
+    background-color: map-get($colors, 2);
+}
+$colors: (
+    "primary": red,
+    "secondary": green,
+    "tertiary": blue
+);
+
+h1 {
+    color: map-get($colors, primary);
+    background-color: map-get($colors, secondary);
+}
+
+//Booleans
+//true, false
+
+//null (lower case, upper case is String not empthy value)
+//empthy value 
