@@ -31,9 +31,8 @@ and npm run watch
 # Steps 
 1) set Terminal in "Command Prompt"
 2) find the correct folder using cd comand
-3) - create package.json: npm init --yes
-4) node-sass -o css scss/main.scss
-5) cange pckage .json test to wach: node-sass -o css scss/main.scss
-6) node-sass -o css scss/main.scss -w
+3) create package.json: npm init --yes
+5) change the script attribute in package.json from test to watch and add as value: node-sass -o css scss/main.scss -w
+
 7) start: npm run watch
 8) every time when open new visal Studio : npm run watch
