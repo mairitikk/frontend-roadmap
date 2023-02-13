@@ -33,6 +33,5 @@ and npm run watch
 2) find the correct folder using cd comand
 3) create package.json: npm init --yes
 5) change the script attribute in package.json from test to watch and add as value: node-sass -o css scss/main.scss -w
-
-7) start: npm run watch
-8) every time when open new visal Studio : npm run watch
+6) start: npm run watch
+7) every time when open new visal Studio : npm run watch
