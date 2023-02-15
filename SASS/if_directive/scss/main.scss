@@ -1,0 +1,18 @@
+//h1 {
+  //  @if(2 < 4) {
+    //    color: red;
+    //}
+//}
+
+@mixin headingSize($size) {
+    @if($size == large) {
+        font-size: 45px;
+    } @else if($size == medium) {
+        font-size: 30px;
+    } @else {
+        font-size: 15px;
+    }
+}
+h1 {
+    @include headingSize(large);
+}
