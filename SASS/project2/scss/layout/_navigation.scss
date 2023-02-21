@@ -1,0 +1,13 @@
+.first-nav {
+    grid-column: 7 / 10;
+    grid-row: 1 / 2;
+    @include navigation;
+}
+.second-nav {
+    grid-column: 3 / 8;
+    grid-row: 3 / 4;
+    @include navigation;
+}
+.dropdown {
+    display: none;
+}
