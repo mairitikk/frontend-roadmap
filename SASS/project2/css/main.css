@@ -26,14 +26,36 @@ html {
   grid-row: 1 / 2; }
   .first-nav-list {
     display: flex;
-    justify-content: space-around; }
+    justify-content: space-around;
+    align-items: center;
+    height: 100%; }
+  .first-nav-item {
+    list-style: none; }
+  .first-nav-link {
+    color: #333;
+    text-decoration: none;
+    font-size: 1.8rem;
+    transition: all .3s; }
+    .first-nav-link:hover {
+      color: #999999; }
 
 .second-nav {
   grid-column: 3 / 8;
   grid-row: 3 / 4; }
   .second-nav-list {
     display: flex;
-    justify-content: space-around; }
+    justify-content: space-around;
+    align-items: center;
+    height: 100%; }
+  .second-nav-item {
+    list-style: none; }
+  .second-nav-link {
+    color: #333;
+    text-decoration: none;
+    font-size: 1.8rem;
+    transition: all .3s; }
+    .second-nav-link:hover {
+      color: #999999; }
 
 .dropdown {
   display: none; }
