@@ -6,6 +6,11 @@
         content: '\f078';
         font-weight: bold;
     }
+    &:hover .dropdown {
+        visibility: visible;
+        opacity: 1;
+        transition: opacity .3s;
+    }
 }
 
 
@@ -19,6 +24,9 @@
     padding: 1rem;
     text-align: center;
     border-radius: 0.2rem;
+    visibility: hidden;
+    opacity: 0;
+
 
     &::before {
         content: '';

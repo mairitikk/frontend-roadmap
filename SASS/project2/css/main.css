@@ -81,6 +81,10 @@ html {
     font-family: 'Font Awesome 5 Free';
     content: '\f078';
     font-weight: bold; }
+  .dropdown-li:hover .dropdown {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity .3s; }
 
 .dropdown {
   position: absolute;
@@ -90,7 +94,9 @@ html {
   background-color: #e6e2e4;
   padding: 1rem;
   text-align: center;
-  border-radius: 0.2rem; }
+  border-radius: 0.2rem;
+  visibility: hidden;
+  opacity: 0; }
   .dropdown-list {
     display: flex;
     justify-content: space-around;
