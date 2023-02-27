@@ -57,6 +57,36 @@ html {
     .second-nav-link:hover {
       color: #999999; }
 
+.slideshow {
+  grid-column: 1 / -1;
+  grid-row: 2 / 3;
+  position: relative;
+  width: 100%;
+  height: 80vh; }
+  .slideshow-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: inherit;
+    height: inherit; }
+    .slideshow-slide img {
+      width: inherit;
+      height: inherit;
+      object-fit: cover; }
+  .slideshow-content {
+    background-color: rgba(255, 255, 238, 0.9);
+    position: absolute;
+    bottom: 6rem;
+    left: 6rem;
+    max-width: 40rem;
+    padding: 5rem; }
+    .slideshow-content h2 {
+      font-size: 4.2rem;
+      color: #333; }
+    .slideshow-content p {
+      margin: 1rem 0;
+      font-size: 1.8rem; }
+
 .logo {
   grid-column: 1 / 2;
   grid-row: 1 / 2;
