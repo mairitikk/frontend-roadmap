@@ -42,20 +42,13 @@
         }
     }
 }
-.slideshow-slide:nth-child(1) {
-    animation-delay: 0s;
-}
-.slideshow-slide:nth-child(2) {
-    animation-delay: 4s;
-}
-.slideshow-slide:nth-child(3) {
-    animation-delay: 8s;
-}
-.slideshow-slide:nth-child(4) {
-    animation-delay: 12s;
-}
-.slideshow-slide:nth-child(5) {
-    animation-delay: 16s;
+
+$animList: 1 0s, 2 4s, 3 8s, 4 12s, 5 16s;
+
+@each $item in $animList {
+    .slideshow-slide:nth-child(#{nth($item,1)}) {
+        animation-delay: nth($item, 2);
+    }
 }
 
 
