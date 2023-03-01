@@ -179,6 +179,11 @@ html {
       border: 0.1rem solid #f5b149;
       background-color: #666666; }
 
+.products-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
 .logo {
   grid-column: 1 / 2;
   grid-row: 1 / 2;
@@ -247,3 +252,53 @@ html {
   .dropdown-link {
     font-weight: 300;
     font-size: 1.6rem; }
+
+.btn {
+  width: 16rem;
+  height: 4rem;
+  text-decoration: none;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+  .btn:hover .btn-bg {
+    width: 18rem; }
+  .btn:hover .btn-text {
+    color: #ffe; }
+  .btn:hover .arrow {
+    transform: translateX(1rem); }
+  .btn:hover .arrow-line-1 {
+    width: 2rem; }
+  .btn-bg {
+    width: 4rem;
+    height: 4rem;
+    background-color: #333;
+    border-radius: 5rem;
+    position: absolute;
+    left: 0;
+    transition: width .2s; }
+  .btn-text {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    color: #333;
+    z-index: 10; }
+  .btn .arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform .2s; }
+    .btn .arrow-line {
+      height: .2rem;
+      background-color: #ffe;
+      position: absolute;
+      transform-origin: right; }
+    .btn .arrow-line-1 {
+      width: 0;
+      transform: translateX(-0.7rem);
+      transition: width .2s; }
+    .btn .arrow-line-2 {
+      width: 1rem;
+      transform: rotateZ(45deg); }
+    .btn .arrow-line-3 {
+      width: 1rem;
+      transform: rotateZ(-45deg); }
