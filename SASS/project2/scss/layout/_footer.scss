@@ -1,0 +1,14 @@
+.footer {
+    grid-column: 1 / -1;
+    grid-row: 4 / 5;
+    @include flexPosition(space-around);
+    padding: 5rem;
+    border-top: .1rem solid color(primary);
+}
+
+.footer-nav {
+    @include footerList;
+}
+.contact-list {
+    @include footerList;
+}
