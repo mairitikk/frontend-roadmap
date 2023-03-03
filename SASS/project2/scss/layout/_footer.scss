@@ -2,7 +2,7 @@
     grid-column: 1 / -1;
     grid-row: 4 / 5;
     @include flexPosition(space-around);
-    padding: 5rem;
+    padding: 5rem 0;
     border-top: .1rem solid color(primary);
 }
 
@@ -11,4 +11,87 @@
 }
 .contact-list {
     @include footerList;
+}
+.contact {
+    &-heading {
+        font-size: size(xl);
+        color: color(primary);
+        text-align: center;
+    }
+    &-paragraph {
+        font-size: size(lg);
+        margin: 1rem 0;
+        text-align: center;
+    }
+
+    .inputs-group {
+        display: flex;
+        justify-content: center;
+
+        input {
+            padding: 1rem;
+            font-size: size(xs);
+            margin: 1rem .5rem;
+            border: .1rem solid darken(color(primary), 10%);
+            border-radius: .3rem;
+            outline: none;
+            transition: border .5s;
+
+            &:focus:not([type="submit"]) {
+                border: .1rem solid darken(color(quaternary), 30%);
+            }
+            
+        }
+
+        &-text {
+            width: 50%;
+        }
+        &-email {
+            width: 60%;
+        }
+
+        &-btn {
+            width: 40%;
+            color: color(secondary);
+            background-color: lighten(color(primary), 20%);
+            transition: background-color .2s;
+
+            &:hover {
+                background-color: color(primary);
+            }
+        }
+    }
+    .social-icons {
+        display: flex;
+        justify-content: space-around;
+        padding: 1rem;
+        box-sizing: border-box;
+
+        &-item {
+            list-style: none;
+        }
+
+        &-link {
+            text-decoration: none;
+            width: 4rem;
+            height: 4rem;
+            border: .1rem solid color(primary);
+            display: block;
+            border-radius: 100%;
+            @include flexPosition;
+
+            i {
+                font-size: size(md);
+            }
+        }
+    }
+}
+
+
+$socialMediaColors: 1 #3b5998, 2 #b31217, 3 #dc4e41, 4 #55acee, 5 #517fa4, 6 #0077b5;
+@each $color in $socialMediaColors {
+    .social-icons-item:nth-child(#{nth($color, 1)}) .social-icons-link {
+        color: nth($color, 2);
+        border: .1rem solid nth($color, 2);
+    }
 }
