@@ -48,14 +48,34 @@
         visibility: hidden;
         transition: all 1s .5s;
 
+        @include response(lg) {
+            padding: 1rem;
+        }
+        @include response(sm) {
+            background-color: transparent;
+            border: none;
+        }
+
         &-heading {
             font-size: size(xl);
+            @include response(lg) {
+                font-size: size(md);
+            }
+            @include response(sm) {
+                display: none;
+            }
         }
 
         &-price {
             font-size: size(lg);
             font-weight: 300;
             margin: 1rem 0;
+            @include response(lg) {
+                font-size: size(sm);
+            }
+            @include response(sm) {
+                display: none;
+            }
 
             span{
                 font-weight: 600;
@@ -69,6 +89,14 @@
             padding: .5rem 1rem;
             border: .1rem solid color(quaternary);
             background-color: lighten(color(primary), 20%);
+
+            @include response(lg) {
+                padding: .2rem .5rem;
+            }
+            @include response(sm) {
+                padding: .5rem .7rem;
+                width: 7rem;
+            }
         }
 
     }
