@@ -36,13 +36,18 @@
 //} 
 //while(i < 5);
 // if statesments
-const age = 25;
-if (age > 20) {
-   console.log('you are over 20 years old');
-}
+//const age = 25;
+//if (age > 20) {
+   //console.log('you are over 20 years old');
+//}
 
-const lilled = ['sinilill', 'nartsiss', 'roos', 'tulp'];
+//const lilled = ['sinilill', 'nartsiss', 'roos', 'tulp'];
 
-if(lilled.length > 3){
-   console.log("thats's a lot of flowers");
+//if(lilled.length > 3){
+   //console.log("thats's a lot of flowers");
+//}
+const password = 'password';
+
+if(password.length >=8){
+   console.log('that password is long enough!')
 }
