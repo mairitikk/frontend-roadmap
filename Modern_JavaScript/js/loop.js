@@ -46,10 +46,13 @@
 //if(lilled.length > 3){
    //console.log("thats's a lot of flowers");
 //}
-const password = 'password';
+const password = 'pij@';
 
-if(password.length >=8){
-   console.log('that password is long enough!')
+if(password.length >=12 && password.includes('@')){
+   console.log('that password is mighty strong!')
+// || ore
+}else if(password.length >=8 || password.includes('@')){
+   console.log('that password is strong enough!')
 } else {
 
    console.log('that password is not long enough!')
