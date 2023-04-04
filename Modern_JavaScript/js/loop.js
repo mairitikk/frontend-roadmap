@@ -28,10 +28,33 @@
 
 //do while loops
 
-let i = 4;
+//let i = 4;
 
-do {
-    console.log('val of i is: ' , i);
-    i++;
-} 
-while(i < 5);
+//do {
+  //  console.log('val of i is: ' , i);
+    //i++;
+//} 
+//while(i < 5);
+// if statesments
+//const age = 25;
+//if (age > 20) {
+   //console.log('you are over 20 years old');
+//}
+
+//const lilled = ['sinilill', 'nartsiss', 'roos', 'tulp'];
+
+//if(lilled.length > 3){
+   //console.log("thats's a lot of flowers");
+//}
+const password = 'pij@';
+
+if(password.length >=12 && password.includes('@')){
+   console.log('that password is mighty strong!')
+// || ore
+}else if(password.length >=8 || password.includes('@')){
+   console.log('that password is strong enough!')
+} else {
+
+   console.log('that password is not long enough!')
+
+}
