@@ -1,22 +1,41 @@
 //object literals
 
 let user = {
+    // variables or properties
     name: 'mairi',
     age: '33',
     email: 'mairi.tikk@gmail.com',
     location: 'darmstad',
-    blogs: ['miks minu blogi on parim', 'minu nimin on']
+    blogs: ['miks minu blogi on parim', 'minu nimin on'],
+    
+    // methods or functions
+    login: function(){
+        console.log('the user logged in');
+    },
+
+    logBlogs: function(){
+        console.log('this user has written the following blogs:');
+        this.blogs.forEach(blog => {
+            console.log(blog);
+        })
+    }
 };
-console.log(user);
+
+user.logBlogs();
+console.log(this);
+//user.login();
+
+
+//console.log(user);
 
 // dot notation
-console.log(user.name);
-user.age = 35;
-console.log(user.age);
+//console.log(user.name);
+//user.age = 35;
+//console.log(user.age);
 
 // squarebracet notation
-console.log(user['email']);
-user['name'] = 'mariin';
-console.log(user['name']);
+//console.log(user['email']);
+//user['name'] = 'mariin';
+//console.log(user['name']);
 
-console.log(typeof user);
+//console.log(typeof user);
