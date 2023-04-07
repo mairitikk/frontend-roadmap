@@ -1,11 +1,11 @@
 
 //object literals
 // object oin arrey
-const blogs = [
-    { title: 'miks ma olen nii laje', likes: 30 },
-    { title: ' 10 pohjust miks ma olen lahe', likes: 50 }
-];
-console.log(blogs);
+//const blogs = [
+  //  { title: 'miks ma olen nii laje', likes: 30 },
+    //{ title: ' 10 pohjust miks ma olen lahe', likes: 50 }
+//];
+//console.log(blogs);
 
 
 //object literals
@@ -16,7 +16,9 @@ let user = {
     age: '33',
     email: 'mairi.tikk@gmail.com',
     location: 'darmstad',
-    blogs: ['miks minu blogi on parim', 'minu nimin on'],
+    blogs: [{ title: 'miks ma olen nii laje', likes: 30 },
+    { title: ' 10 pohjust miks ma olen lahe', likes: 50 }
+],
     
     // methods or functions
     // more shorter function
@@ -27,7 +29,7 @@ let user = {
     logBlogs(){
         console.log('this user has written the following blogs:');
         this.blogs.forEach(blog => {
-            console.log(blog);
+            console.log(blog.title, blog.likes);
         })
     }
 };
