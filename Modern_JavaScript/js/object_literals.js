@@ -9,11 +9,12 @@ let user = {
     blogs: ['miks minu blogi on parim', 'minu nimin on'],
     
     // methods or functions
-    login: function(){
+    // more shorter function
+    login(){
         console.log('the user logged in');
     },
 
-    logBlogs: function(){
+    logBlogs(){
         console.log('this user has written the following blogs:');
         this.blogs.forEach(blog => {
             console.log(blog);
