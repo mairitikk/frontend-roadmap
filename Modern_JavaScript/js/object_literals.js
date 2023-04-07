@@ -1,3 +1,13 @@
+
+//object literals
+// object oin arrey
+const blogs = [
+    { title: 'miks ma olen nii laje', likes: 30 },
+    { title: ' 10 pohjust miks ma olen lahe', likes: 50 }
+];
+console.log(blogs);
+
+
 //object literals
 
 let user = {
