@@ -20,3 +20,11 @@ paras.forEach(p => {
         p.classList.add('success');
     }
 });
+
+// how to toggel classes if has class we want to take it off ja kui ei ole klassi siis paneme
+ const title = document.querySelector('.title');
+
+ //anname classi test
+ title.classList.toggle('test');
+ // kui uuesti siis v6tab test claasi 2ra
+ title.classList.toggle('test');
