@@ -18,3 +18,5 @@ console.log(title.parentElement);
 console.log(title.parentElement.parentElement);
 
 //finding sibling element
+console.log(title.nextElementSibling);
+console.log(title.previousElementSibling);
