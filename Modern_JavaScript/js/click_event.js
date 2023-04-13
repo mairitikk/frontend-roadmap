@@ -15,11 +15,14 @@ items.forEach(item => {
         //console.log(item);
 
         // kui listile vajutab t6mbab joone peale
-        e.target.style.textDecoration = 'line-through';
+       // e.target.style.textDecoration = 'line-through';
+
+       // kui tahame yks haaval peale vajutades eemaldada
+       e.target.remove();
     });
 });
 
 // kui tahame tervet listi korraga kustutada
 
-const ul = document.querySelector('ul');
-ul.remove();
+//const ul = document.querySelector('ul');
+//ul.remove();
