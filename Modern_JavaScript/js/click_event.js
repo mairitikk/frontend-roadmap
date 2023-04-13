@@ -17,6 +17,9 @@ const items = document.querySelectorAll('li');
 
 items.forEach(item => {
     item.addEventListener('click' , e =>{
+        console.log('event in LI');
+        // siis kui selle paned peatab bubbeling efekti et ei l2h ul tag kallale
+        e.stopPropagation();
        // console.log('item clicked');
        // logib consoli millist vajutasid
        //console.log(e.target);
@@ -35,3 +38,8 @@ items.forEach(item => {
 
 //const ul = document.querySelector('ul');
 //ul.remove();
+
+// event bubbling
+ul.addEventListener('click', e => {
+    console.log('event in UL');
+})
