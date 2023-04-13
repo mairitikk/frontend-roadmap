@@ -18,3 +18,8 @@ items.forEach(item => {
         e.target.style.textDecoration = 'line-through';
     });
 });
+
+// kui tahame tervet listi korraga kustutada
+
+const ul = document.querySelector('ul');
+ul.remove();
