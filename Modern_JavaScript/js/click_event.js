@@ -1,7 +1,9 @@
 const button = document.querySelector('button');
+const ul = document.querySelector('ul');
 
 button.addEventListener('click', () => {
-    console.log('you cliked me');
+    //console.log('you cliked me');
+    ul.innerHTML += '<li>something new</li>';
 });
 
 const items = document.querySelectorAll('li');
