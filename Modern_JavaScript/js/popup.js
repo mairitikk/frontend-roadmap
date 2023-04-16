@@ -9,3 +9,6 @@ button.addEventListener('click' , () =>{
 close.addEventListener('click' , () => {
     popup.style.display = 'none';
 });
+popup.addEventListener('click' , () => {
+    popup.style.display = 'none';
+});
