@@ -20,6 +20,7 @@ form.addEventListener('submit' , e => {
 });
 //live feedback
 form.username.addEventListener('keyup', e => {
+    console.log(e);
    // console.log(e.target.value, form.username.value);
    if(usernamePattern.test(e.target.value)){
     form.username.setAttribute('class', 'success');
