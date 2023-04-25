@@ -12,5 +12,6 @@ form.addEventListener('submit', e => {
         if(answer === correctAnswers[index]){
             score += 25;
         }
-    })
+    });
+    console.log(score);
 });
